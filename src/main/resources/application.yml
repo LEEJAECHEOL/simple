@@ -1,0 +1,12 @@
+
+---
+spring:
+  config:
+    activate:
+      on-profile: env1
+
+---
+spring:
+  config:
+    activate:
+      on-profile: env2
