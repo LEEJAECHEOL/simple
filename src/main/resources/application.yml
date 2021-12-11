@@ -1,12 +1,30 @@
 
+management:
+  endpoint:
+    web:
+      exposure:
+        include: health
+
 ---
 spring:
   config:
     activate:
       on-profile: env1
 
+management:
+  endpoint:
+    web:
+      exposure:
+        include: health
+
 ---
 spring:
   config:
     activate:
       on-profile: env2
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: health
