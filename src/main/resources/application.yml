@@ -10,13 +10,13 @@ spring:
   config:
     activate:
       on-profile: env1
-
 management:
   endpoint:
     web:
       exposure:
         include: health
-
+server:
+  port: 8081
 ---
 spring:
   config:
@@ -28,3 +28,5 @@ management:
     web:
       exposure:
         include: health
+server:
+  port: 8082
